@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Assignment"
+            android:icon="@drawable/assignment"
+            android:title="What's due?" />
+        <!--<item
+            android:id="@+id/Overview"
+            android:icon="@drawable/overview"
+            android:title="Overview" />
+        <item
+            android:id="@+id/imp"
+            android:icon="@drawable/important"
+            android:title="Important Questions" />-->
+        <item
+            android:id="@+id/completed"
+            android:icon="@drawable/completed"
+            android:title="Completed Assignments" />
+    </group>
+
+    <item android:title="About The Application">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/aboutus"
+                android:title="Settings" />
+            <!--<item
+                android:id="@+id/faq"
+                android:icon="@drawable/faq"
+                android:title="FAQ" />-->
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignmenttracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".AddAssignment" />
+        <activity android:name=".check" />
+        <activity android:name=".CalendarActivity"
+            android:label="Calendar"/>
+        <activity android:name=".Setting"
+                  android:label="Settings"
+            />
+        <receiver android:name=".MyReceiver" />
+        <activity
+            android:name=".completedAssignments"
+            android:label="Completed Assignments" />
+        <activity android:name=".editActivity" />
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
